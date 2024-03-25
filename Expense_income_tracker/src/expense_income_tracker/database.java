@@ -17,8 +17,8 @@ public class database {
 
         create table entry_table(
 
-            date_ date,
-            type_ varchar(15),
+            date date,
+            type varchar(15),
             amount numeric(20,2),
             description varchar(100),
 
