@@ -9,21 +9,9 @@ public class database {
     String url = "jdbc:mysql://localhost:3306/personal_finance_tracker_database";
     Connection connection;
     /*
-    b1 : Xóa bảng dữ liệu hiện tại bằng lệnh:
-            drop talbe entry_table;
-
-    b2: viết cái này vào mySQL rồi chạy
-
-
-        create table entry_table(
-
-            date date,
-            type varchar(15),
-            amount numeric(20,2),
-            description varchar(100),
-
-            id int primary key auto_increment not null
-        );
+    để sử dụng phần mềm: 
+            tạo database bằng lệnh sau trong MySQL:
+             create database personal_finance_tracker_database;
 
 
      */
@@ -76,6 +64,7 @@ public class database {
 
             } catch (SQLException ex) {
                 JOptionPane.showMessageDialog(null ,"Cannot connect to database", "Error", JOptionPane.ERROR_MESSAGE);
+                
             }
             return statement;
         }
